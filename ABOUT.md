@@ -1,2 +1,2 @@
-the deveops is sp]\
-im the one 
+im learning devOps
+
