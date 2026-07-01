@@ -7,4 +7,4 @@ Learning Git and DevOps
 - Linux
 - Git
 - GitHub
-- SSHmy boss is here
+- SSH
