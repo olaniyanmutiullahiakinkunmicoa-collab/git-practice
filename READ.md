@@ -8,3 +8,9 @@ Learning Git and DevOps
 - Git
 - GitHub
 - SSH
+## DevOps Progress
+
+- Git Basics ✅
+- Branching ✅
+- Merge ✅
+- Tags ✅
