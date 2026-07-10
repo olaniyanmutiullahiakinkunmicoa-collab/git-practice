@@ -14,3 +14,4 @@ Learning Git and DevOps
 - Branching ✅
 - Merge ✅
 - Tags ✅
+Learning CI/CD
