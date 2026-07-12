@@ -1,4 +1,3 @@
-name: My first CI
 
 on:
     push:
@@ -18,9 +17,9 @@ jobs:
         steps:
             
             - name: Checkout Repository
-              uses: action/checkout@v4
+              uses: actions/checkout@v4
 
             - name: Print Message
 
-            -  run: echo "Hello from Github Actions!" 
+              run: echo "Hello from Github Actions!" 
 
