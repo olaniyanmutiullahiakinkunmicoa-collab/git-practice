@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 name:  My fist CI
-=======
-name: My first CI
->>>>>>> parent of ecba7fb (Add Github Action workflow)
+
+
+
 
 on:
     push:
@@ -22,9 +21,9 @@ jobs:
         steps:
             
             - name: Checkout Repository
-              uses: action/checkout@v4
+              uses: actions/checkout@v4
 
             - name: Print Message
 
-            -  run: echo "Hello from Github Actions!" 
+               run: echo "Hello from Github Actions!" 
 
