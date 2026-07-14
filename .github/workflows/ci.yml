@@ -39,7 +39,7 @@ jobs:
         run: java -version
 
       - name: Compile Java Program
-        run: javac src/Main.java
+        run: javac src/*.java
 
-      - name: Run Java Program
-        run: java -cp src Main
+      - name: Run Tests
+        run: java -cp src TestCalculator
