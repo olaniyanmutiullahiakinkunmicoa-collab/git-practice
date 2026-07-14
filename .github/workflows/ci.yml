@@ -1,28 +1,37 @@
-name:  My fist CI
-
-
-
+name: Java CI
 
 on:
-    push:
-        branches:
-            - main
-            - feature-*
-    pull_request:
-        branches:
-            - main
+  push:
+    branches:
+      - main
+      - feature-*
+
+  pull_request:
+    branches:
+      - main
 
 jobs:
 
-    build:
+  build:
 
-        runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-        steps:
-            
-            - name: Checkout Repository
-              uses: actions/checkout@v4
+    steps:
 
-            - name: Print Message
-              run: echo "Hello from Github Actions!" 
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Check Java Version
+        run: java -version
+
+      - name: Compile Java Program
+        run: javac src/Main.java
+
+      - name: Run Java Program
+        run: java -cp src Main
